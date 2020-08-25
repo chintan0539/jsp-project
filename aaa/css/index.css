@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../imgs/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+nav {
+  background-color: black;
+  height: 70px;
+}
+
+.menu {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  color: #fff;
+  font-size: 150%;
+  float: left;
+  margin-top: 20px;
+  padding: 0 2%;
+}
+
+.main-menu {
+  float: right;
+  list-style-type: none;
+  padding: 0 2%;
+}
+
+.main-menu li {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.main-menu li a {
+  color: #fff;
+  padding: 8px 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+  transition: border-bottom 0.3s, color 0.3s;
+}
+
+.main-menu li a:hover {
+  border-bottom: 2px solid #6a4835;
+  border-top: 2px solid #6a4835;
+}
+
+.menu-icon {
+  float: right;
+  margin-top: 20px;
+  cursor: pointer;
+  display: none;
+  padding: 0 2%;
+}
+
+.menu-icon i {
+  font-size: 150%;
+  color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  .menu-icon {
+    display: inline-block;
+  }
+  .main-menu {
+    float: left;
+    padding-bottom: 20px;
+    display: none;
+    background-color: black;
+    width: 100%;
+  }
+  .main-menu li {
+    display: block;
+  }
+  .main-menu li a {
+    display: block;
+    border: 0;
+    padding: 5px 0;
+  }
+}
