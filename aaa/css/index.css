@@ -9,18 +9,23 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 20px;
-  overflow: hidden;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
     url("../imgs/bg.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
 nav {
-  background-color: black;
+  background-color: #6a4835;
   height: 70px;
 }
 
@@ -62,12 +67,14 @@ nav {
 }
 
 .main-menu li a:hover {
-  border-bottom: 2px solid #6a4835;
-  border-top: 2px solid #6a4835;
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #fff;
 }
 
 .menu-icon {
+  position: absolute;
   float: right;
+  right: 0;
   margin-top: 20px;
   cursor: pointer;
   display: none;
@@ -79,15 +86,135 @@ nav {
   color: #fff;
 }
 
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sec-about {
+  padding: 80px 0;
+}
+
+.about {
+  display: inline-block;
+  color: #6a4835;
+  padding-bottom: 20px;
+  margin-left: 2%;
+  border-bottom: #6a4835 solid 5px;
+}
+
+.about-special {
+  display: inline-block;
+  color: #fff;
+  padding-bottom: 10px;
+  margin-left: 2%;
+  border-bottom: #fff solid 5px;
+  margin-bottom: 40px;
+}
+
+.chef-cap {
+  padding: 40px;
+  border-bottom: #6a4835 solid 5px;
+}
+
+.col {
+  /* display: inline-block; */
+  float: left;
+}
+.col-left {
+  width: 30%;
+}
+.col-left img {
+  border-radius: 100px;
+}
+
+.col-right {
+  width: 70%;
+}
+.col-right p {
+  padding-top: 50px;
+  text-align: justify;
+}
+
+.section-specials {
+  height: auto;
+  background: #6a4835;
+  padding: 30px;
+}
+
+.meals-showcase {
+  display: inline-block;
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  margin: 0, auto;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.1);
+  transition: transform 0.5s, opacity 0.5s;
+}
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.abt-htl-head {
+  display: inline-block;
+  padding-bottom: 10px;
+  color: #6a4835;
+  border-bottom: #6a4835 solid 4px;
+}
+.abt-htl {
+  text-align: justify;
+  color: #000;
+}
+
+.about-hotel {
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("../imgs/about-hotel.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+
+.outer {
+  background-color: #fff;
+  padding: 50px 50px;
+}
+
 @media only screen and (max-width: 767px) {
   .menu-icon {
     display: inline-block;
   }
   .main-menu {
     float: left;
+    margin-top: 10px;
     padding-bottom: 20px;
     display: none;
-    background-color: black;
+    background-color: #6a4835;
     width: 100%;
   }
   .main-menu li {
@@ -97,5 +224,40 @@ nav {
     display: block;
     border: 0;
     padding: 5px 0;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .about {
+    margin-left: 10%;
+    font-size: 25px;
+  }
+
+  .col-right p {
+    font-size: 15px;
+  }
+  .meals-showcase li {
+    width: 50%;
+  }
+  .about-special {
+    font-size: 25px;
+  }
+  .section-specials {
+    height: auto;
+    background: #6a4835;
+    padding: 30px 0;
+  }
+
+  .abt-htl-head {
+    font-size: 25px;
+
+    margin-left: 2%;
+  }
+  .abt-htl {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 15px;
   }
 }
