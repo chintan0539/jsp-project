@@ -1,0 +1,100 @@
+section {
+  max-width: 1140px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.contain-menu {
+  margin-top: 100px;
+  background-color: wheat;
+}
+
+.menu-temp {
+  border-left: yellow solid 5px;
+  width: 30%;
+  float: left;
+  padding: 20px;
+  text-align: center;
+  color: #2c3335;
+}
+
+.menu-description {
+  border-left: yellow solid 5px;
+  border-right: yellow solid 5px;
+  padding: 20px;
+  width: 70%;
+  float: left;
+}
+
+.menu-temp h2 {
+  padding: 10px;
+  border: goldenrod solid 5px;
+}
+
+.menu-temp h4 {
+  font-family: "Dancing Script", cursive;
+  margin-top: 50px;
+  text-transform: uppercase;
+  padding: 10px;
+  border-right: transparent solid 3px;
+  border-left: transparent solid 3px;
+}
+
+.menu-temp h4:hover {
+  border-right: goldenrod solid 3px;
+  border-left: goldenrod solid 3px;
+}
+
+.menu-description h3 {
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  color: gold;
+}
+
+.menu-description h4 {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.menu-description p {
+  font-size: 70%;
+  margin: 01px 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .menu-temp {
+    border: yellow solid 5px;
+    width: 100%;
+
+    text-align: center;
+    color: #2c3335;
+  }
+
+  .menu-description {
+    border: none;
+    width: 100%;
+  }
+
+  .menu-temp h2 {
+    padding: 10px;
+    font-size: 90%;
+  }
+
+  .menu-temp h4 {
+    margin-top: 50px;
+    font-size: 80%;
+  }
+
+  .menu-description h3 {
+    font-size: 80%;
+  }
+
+  .menu-description h4 {
+    font-size: 70%;
+  }
+  .menu-description p {
+    font-size: 50%;
+  }
+}
